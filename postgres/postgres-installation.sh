@@ -28,17 +28,6 @@ if [ $? -gt 1 ]; then
     sudo systemctl start postgresql
     sudo systemctl enable postgresql
 
-    #Creating New Role in Postgres
-
-    # echo "********Creating Role of Postgresql************"
-
-    # id $NEW_ROLE &> /dev/null
-    # if [ $? -ne 0 ]; then
-    #     sudo useradd $NEW_ROLE
-    # else 
-    #     echo "User $NEW_ROLE already Exists"
-    # fi
-
     #Configuring Postgresql
 
     echo "*******Configuring Postgresql******************"
